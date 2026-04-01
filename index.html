@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda Deportiva</title>
+    <title>VX Sport</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<header>
-    <h1>SportStyle</h1>
-    <p>Ropa deportiva al mejor precio</p>
+<header class="hero">
+    <h1>VX SPORT</h1>
+    <p>Estilo deportivo sin límites</p>
 </header>
 
 <nav>
@@ -17,46 +17,112 @@
     <a href="#">Verano</a>
     <a href="#">Invierno</a>
     <a href="#">Varios</a>
+    <a href="#formulario">📋 Hacer Pedido</a>
+    <a href="https://www.instagram.com/vxsport" target="_blank" class="nav-ig">📸 Instagram</a>
 </nav>
 
 <main>
 
     <section class="productos">
 
-        <!-- Producto 1 -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x300" alt="Producto">
-            <h3>Remera Deportiva</h3>
-            <p>Código: R001</p>
+            <img src="https://via.placeholder.com/300x300" alt="">
+            <h3>Remera Training</h3>
+            <p>Código: VX01</p>
             <p class="precio">$10.000</p>
-            <a href="#" class="btn">Consultar</a>
+            <a href="https://wa.me/549XXXXXXXXXX" class="btn">Consultar</a>
         </div>
 
-        <!-- Producto 2 -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x300" alt="Producto">
-            <h3>Short Deportivo</h3>
-            <p>Código: S002</p>
+            <img src="https://via.placeholder.com/300x300" alt="">
+            <h3>Short Pro</h3>
+            <p>Código: VX02</p>
             <p class="precio">$8.000</p>
-            <a href="#" class="btn">Consultar</a>
+            <a href="https://wa.me/549XXXXXXXXXX" class="btn">Consultar</a>
         </div>
 
-        <!-- Producto 3 -->
         <div class="card">
-            <img src="https://via.placeholder.com/300x300" alt="Producto">
-            <h3>Buzo Deportivo</h3>
-            <p>Código: B003</p>
+            <img src="https://via.placeholder.com/300x300" alt="">
+            <h3>Buzo Elite</h3>
+            <p>Código: VX03</p>
             <p class="precio">$15.000</p>
-            <a href="#" class="btn">Consultar</a>
+            <a href="https://wa.me/549XXXXXXXXXX" class="btn">Consultar</a>
         </div>
 
+    </section>
+
+    <!-- FORMULARIO DE COMPRA -->
+    <section id="formulario" class="formulario-section">
+        <h2>📋 Hacer un Pedido</h2>
+        <p class="form-sub">Completá el formulario y te contactamos por WhatsApp</p>
+        <form id="pedidoForm" onsubmit="enviarPedido(event)">
+            <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label>WhatsApp / Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Ej: 11 1234-5678" required>
+            </div>
+            <div class="form-group">
+                <label>Producto que querés</label>
+                <select id="producto">
+                    <option value="">-- Seleccioná un producto --</option>
+                    <option value="Remera Training (VX01) - $10.000">Remera Training (VX01) - $10.000</option>
+                    <option value="Short Pro (VX02) - $8.000">Short Pro (VX02) - $8.000</option>
+                    <option value="Buzo Elite (VX03) - $15.000">Buzo Elite (VX03) - $15.000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Talle</label>
+                <select id="talle">
+                    <option value="S">S</option>
+                    <option value="M" selected>M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Cantidad</label>
+                <input type="number" id="cantidad" min="1" value="1">
+            </div>
+            <div class="form-group">
+                <label>Comentarios (opcional)</label>
+                <textarea id="comentarios" placeholder="Color, consulta, etc."></textarea>
+            </div>
+            <button type="submit" class="btn-form">Enviar Pedido por WhatsApp 🚀</button>
+        </form>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2026 SportStyle</p>
+    <div class="footer-content">
+        <p>© 2026 VX Sport</p>
+        <a href="https://www.instagram.com/vxsport" target="_blank" class="footer-ig">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @vxsport
+        </a>
+    </div>
 </footer>
+
+<script>
+function enviarPedido(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const telefono = document.getElementById('telefono').value;
+    const producto = document.getElementById('producto').value || 'No especificado';
+    const talle = document.getElementById('talle').value;
+    const cantidad = document.getElementById('cantidad').value;
+    const comentarios = document.getElementById('comentarios').value || 'Ninguno';
+
+    const mensaje = `🛒 *NUEVO PEDIDO - VX Sport*\n\n👤 Nombre: ${nombre}\n📱 Teléfono: ${telefono}\n👕 Producto: ${producto}\n📏 Talle: ${talle}\n🔢 Cantidad: ${cantidad}\n💬 Comentarios: ${comentarios}`;
+
+    const url = `https://wa.me/549XXXXXXXXXX?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+}
+</script>
 
 </body>
 </html>
