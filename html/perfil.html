@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+
+    <h1>👤 Perfil del Usuario</h1>
+
+    <form>
+
+        <h2>Datos personales</h2>
+
+        <label>Tipo de usuario:</label><br>
+        <input type="text" value="ESTUDIANTE" readonly><br><br>
+
+        <label>Nombre completo:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad"><br><br>
+
+        <label>Nacionalidad:</label><br>
+        <select name="nacionalidad">
+            <option>Argentina</option>
+            <option>Brasil</option>
+            <option>Chile</option>
+            <option>Uruguay</option>
+        </select><br><br>
+
+        <label>Condición laboral:</label><br>
+        <select name="trabajo">
+            <option>Desempleado</option>
+            <option>En búsqueda laboral</option>
+            <option>Trabajo part time</option>
+            <option>Trabajo full time</option>
+        </select><br><br>
+
+        <h2>Gustos personales</h2>
+
+        <label>Música favorita:</label><br>
+        <input type="text" name="musica"><br><br>
+
+        <label>Comida preferida:</label><br>
+        <select name="comida">
+            <option>Pizza</option>
+            <option>Hamburguesa</option>
+            <option>Pasta</option>
+            <option>Ensalada</option>
+        </select><br><br>
+
+        <input type="checkbox" name="recordar"> Recordar datos<br><br>
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Tablas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #e8f5e8;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 1px solid #ddd;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎮 Mi Colección de Videojuegos</h1>
+
+    <!-- PASO #2: Tabla básica (4 columnas, 3 filas) -->
+    <h2>📊 Tabla Básica - Mis Juegos Favoritos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Juego</th>
+                <th>Plataforma</th>
+                <th>Año</th>
+                <th>Género</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>The Legend of Zelda: Breath of the Wild</td>
+                <td>Nintendo Switch</td>
+                <td>2017</td>
+                <td>Aventura</td>
+            </tr>
+            <tr>
+                <td>Super Mario Odyssey</td>
+                <td>Nintendo Switch</td>
+                <td>2017</td>
+                <td>Plataformas</td>
+            </tr>
+            <tr>
+                <td>Animal Crossing: New Horizons</td>
+                <td>Nintendo Switch</td>
+                <td>2020</td>
+                <td>Simulación</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- PASO #3: Tabla compleja (5 columnas, 4 filas, con tfoot, rowspan, colspan y links) -->
+    <h2>🛒 Tabla Compleja - Tienda de Videojuegos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Juego</th>
+                <th colspan="2">Precio</th>
+                <th rowspan="2">Stock</th>
+                <th rowspan="2">Comprar</th>
+            </tr>
+            <tr>
+                <th>Original</th>
+                <th>Oferta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>God of War Ragnarök</td>
+                <td>$69.99</td>
+                <td>$59.99</td>
+                <td>25</td>
+                <td><a href="https://store.playstation.com/godofwar" target="_blank">🛒 Comprar</a></td>
+            </tr>
+            <tr>
+                <td>Elden Ring</td>
+                <td>$59.99</td>
+                <td>$49.99</td>
+                <td>18</td>
+                <td><a href="https://store.steampowered.com/eldenring" target="_blank">🛒 Comprar</a></td>
+            </tr>
+            <tr>
+                <td>Spider-Man 2</td>
+                <td>$69.99</td>
+                <td>$64.99</td>
+                <td>12</td>
+                <td><a href="https://store.playstation.com/spiderman2" target="_blank">🛒 Comprar</a></td>
+            </tr>
+            <tr>
+                <td>Metroid Dread</td>
+                <td>$59.99</td>
+                <td>$54.99</td>
+                <td>8</td>
+                <td><a href="https://www.nintendo.com/metroiddread" target="_blank">🛒 Comprar</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total disponible:</strong> 63 unidades</td>
+                <td colspan="2"><strong>¡Envío gratis!</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <div style="text-align: center; margin-top: 40px;">
+        <h2><a href="/html/login.html">🔐 Iniciar Sesión</a></h2>
+        <h2><a href="/html/perfil.html">👤 Mi Perfil</a></h2>
+    </div>
+
+</body>
+</html>
