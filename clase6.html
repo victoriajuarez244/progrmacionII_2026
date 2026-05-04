@@ -1,139 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Tabla de Usuarios</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
-        margin: 0;
-        padding: 0;
-    }
-
-    h1 {
-        text-align: center;
-        margin-top: 40px;
-        color: #222;
-    }
-
-    .container {
-        width: 80%;
-        margin: 30px auto;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        overflow: hidden;
-    }
-
-    .table-header, .row {
-        display: grid;
-        grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
-        align-items: center;
-        padding: 15px 20px;
-    }
-
-    .table-header {
-        font-size: 12px;
-        color: #9aa5b1;
-        border-bottom: 1px solid #eee;
-    }
-
-    .row {
-        border-bottom: 1px solid #eee;
-    }
-
-    .row:last-child {
-        border-bottom: none;
-    }
-
-    .user {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .user img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
-
-    .user-info {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-    }
-
-    .user-info span:last-child {
-        font-size: 12px;
-        color: gray;
-    }
-
-    .badge {
-        background: #c6f6d5;
-        color: #2f855a;
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        text-align: center;
-        width: fit-content;
-    }
-
-    .edit {
-        color: #2b6cb0;
-        cursor: pointer;
-        font-size: 14px;
-    }
-
-    .edit:hover {
-        text-decoration: underline;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web</title>
+    <link rel="stylesheet" href="/css/formulario.css">
 </head>
 <body>
 
 <h1>Este es un titulo</h1>
+<div class="box"></div>
 
-<div class="container">
+    <div class="container">
+        <table class="table-custom">
     
-    <div class="table-header">
-        <div>NOMBRE</div>
-        <div>TITULO</div>
-        <div>ESTADO</div>
-        <div>ROL</div>
-        <div></div>
-    </div>
-
-    <div class="row">
-        <div class="user">
-            <img src="https://i.pravatar.cc/40?img=3" alt="">
-            <div class="user-info">
-                <span>Juan Perez</span>
-                <span>juan@perez.com</span>
-            </div>
-        </div>
-        <div>Tecnico en Programacion</div>
-        <div><span class="badge">Activo</span></div>
-        <div>Desarrollador</div>
-        <div class="edit">Editar</div>
-    </div>
-
-    <div class="row">
-        <div class="user">
-            <img src="https://i.pravatar.cc/40?img=5" alt="">
-            <div class="user-info">
-                <span>Juan Perez</span>
-                <span>juan@perez.com</span>
-            </div>
-        </div>
-        <div>Tecnico en Programacion</div>
-        <div><span class="badge">Activo</span></div>
-        <div>Desarrollador</div>
-        <div class="edit">Editar</div>
-    </div>
-
-</div>
+            <thead>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>TITULO</th>
+                    <th>ESTADO</th>
+                    <th>ROL</th>
+                    <th></th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://i.pravatar.cc/40?img=3">
+                        <div class="user-info">
+                            <span>Juan Perez</span>
+                            <span>juan@perez.com</span>
+                        </div>
+                    </td>
+                    <td>Tecnico en Programacion</td>
+                    <td><span class="badge">Activo</span></td>
+                    <td>Desarrollador</td>
+                    <td class="edit">Editar</td>
+                </tr>
+    
+                <tr>
+                    <td class="user">
+                        <img src="https://i.pravatar.cc/40?img=5">
+                        <div class="user-info">
+                            <span>Juan Perez</span>
+                            <span>juan@perez.com</span>
+                        </div>
+                    </td>
+                    <td>Tecnico en Programacion</td>
+                    <td><span class="badge">Activo</span></td>
+                    <td>Desarrollador</td>
+                    <td class="edit">Editar</td>
+                </tr>
+            </tbody>
+    
+        </table>
 
 </body>
 </html>
