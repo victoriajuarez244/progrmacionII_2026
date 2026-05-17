@@ -1,0 +1,28 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+.grid > * {
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    border-radius: 0.5em;
+    color: white;
+    padding: 0.5em;
+  }
+  
+  /* tablet */
+  @media (min-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* desktop */
+  @media (min-width: 900px) {
+    .grid {
+      grid-template-columns: 3, 1fr;
+    }
+  }
