@@ -1,0 +1,56 @@
+h2{font-family: "Noto Sans" ,sans-serif;
+font-size: 500px;
+background-image: url(../img/Robotech_Macross_Veritech_Fighter-1842363.jpg!d);
+background-size: cover;
+background-clip: text;
+color: transparent;
+animation: animate 20s linear infinite;
+
+}
+@keyframes animate{
+    to{
+        background-position-x: -500px;
+    }
+}
+
+
+body{
+    background-color: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+
+}
+
+
+
+
+
+.name{
+    flex:1 0 149px ;
+}
+
+.mail{
+    flex: 1 0 120px;
+
+
+}
+
+
+button{ 
+    flex: 1 0 60px;} */
