@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/practicajs.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+
+        <form>
+    
+            Nombre:
+            <input type="text" id="nombre"><br><br>
+    
+            Apellido:
+            <input type="text" id="apellido"><br><br>
+    
+            Sexo:
+            <select id="sexo" onchange="cargarProfesiones()">
+                <option value="">Seleccione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select><br><br>
+    
+            Profesión:
+            <select id="profesion"></select><br><br>
+    
+            Comentario:
+            <textarea id="comentario"></textarea><br><br>
+    
+            <button type="button" onclick="validar()">Enviar</button>
+    
+        </form>
+    
+    </div>
+</body>
+<script src="../js/practicajs.js"></script>
+</html>

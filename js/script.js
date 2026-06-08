@@ -3,3 +3,6 @@ function miFuncion() {
     alert(txNombre);
     txNombre.value="hola mundo";
 }
+console.log('🎨 Página de Diseño Gráfico cargada correctamente!');
+// innerhtml(interpretarlo)
+// innertext(texto plano )
