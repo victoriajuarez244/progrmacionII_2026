@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Comparación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        #contenedor {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+
+    <div id="contenedor">
+        <h1>Operadores de Comparación en JavaScript</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        let resultado = document.getElementById("resultado");
+
+        resultado.innerHTML += `<p>== Igual a: ${5 == "5"}</p>`;
+        resultado.innerHTML += `<p>=== Estrictamente igual a: ${5 === "5"}</p>`;
+        resultado.innerHTML += `<p>!= Distinto de: ${5 != 10}</p>`;
+        resultado.innerHTML += `<p>!== Estrictamente distinto de: ${5 !== "5"}</p>`;
+        resultado.innerHTML += `<p>> Mayor que: ${10 > 5}</p>`;
+        resultado.innerHTML += `<p>< Menor que: ${5 < 10}</p>`;
+        resultado.innerHTML += `<p>>= Mayor o igual que: ${10 >= 10}</p>`;
+        resultado.innerHTML += `<p><= Menor o igual que: ${5 <= 10}</p>`;
+        resultado.innerHTML += `<h2>Operadores Lógicos</h2>`;
+
+resultado.innerHTML += `<p>&& (AND): ${(5 > 3) && (10 > 5)}</p>`;
+
+resultado.innerHTML += `<p>|| (OR): ${(5 > 10) || (10 > 5)}</p>`;
+
+resultado.innerHTML += `<p>! (NOT): ${!(5 > 10)}</p>`;
+    </script>
+
+</body>
+</html>
