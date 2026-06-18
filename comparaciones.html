@@ -37,7 +37,7 @@
         <h1>Operadores de Comparación en JavaScript</h1>
         <div id="resultado"></div>
     </div>
-
+  
     <script>
         let resultado = document.getElementById("resultado");
 
@@ -51,12 +51,29 @@
         resultado.innerHTML += `<p><= Menor o igual que: ${5 <= 10}</p>`;
         resultado.innerHTML += `<h2>Operadores Lógicos</h2>`;
 
+
 resultado.innerHTML += `<p>&& (AND): ${(5 > 3) && (10 > 5)}</p>`;
 
 resultado.innerHTML += `<p>|| (OR): ${(5 > 10) || (10 > 5)}</p>`;
 
 resultado.innerHTML += `<p>! (NOT): ${!(5 > 10)}</p>`;
+
     </script>
+    <h2>Incremento (++)</h2>
+
+<script>
+    let n = 5;
+    let resultad = (n++) + 10;
+
+    document.write("<p>Valor de resultado: " + resultad + "</p>");
+    document.write("<p>Valor de n después de la operación: " + n + "</p>");
+
+let m = 5;
+let resultado2 = (++m) + 10;
+
+console.log(resultado2);
+console.log(m);
+</script>
 
 </body>
 </html>
