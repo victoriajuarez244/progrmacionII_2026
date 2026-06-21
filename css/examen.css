@@ -1,0 +1,19 @@
+body {
+    background-color :rgb(25, 148, 197);
+    }
+    
+h1 {
+    font-size: 30px;
+    color: blue;
+    font-weight: 900;
+
+    }
+
+.img {
+        width: 100%;           /* Ocupa el ancho disponible */
+        max-width: 400px;      /* Pero no más de 400px */
+        height: auto;          /* Mantiene la proporción */
+        border-radius: 20px;   /* Esquinas suavizadas */
+        display: block;        /* Comportamiento de bloque */
+        margin: 10px auto;     /* Centrada con margen arriba y abajo */
+}
