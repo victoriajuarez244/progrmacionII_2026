@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LC2 - Examen Parcial - Victoria Juarez</title>
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/p.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#article-secciones-resumen">RESUMEN</a></li>
+        <li><a href="#article-secciones-experiencia">EXPERIENCIA</a></li>
+        <li><a href="#article-secciones-conocimientos">CONOCIMIENTOS</a></li>
+        <li><a href="#footer-contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section-main-image">
+      <img src="../img/cc-bg-1.jpg "alt=Foto de perfil class="profile-picture">
+      <h1>Victoria Juarez</h1>
+      <h2>Desarrolladora y experta en lavado de dinero.</h2>
+    </section>
+
+    <section id="section-secciones" class="container">
+      <article id="article-secciones-resumen" class="article-section-secciones">
+        <h2>Resumen</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Perferendis minus qui voluptate ratione reiciendis eveniet, saepe est eius nihil, 
+          possimus veniam ipsum tempore explicabo! Quos voluptates dicta expedita illum eos?
+          En la profesion de lavado de dinero, aprendi de los mejores y entendi que nunca hay que dejar de pagar impuestos
+
+        </p>
+      </article>
+
+      <article id="article-secciones-experiencia" class="article-section-secciones">
+        <h2>Experiencia</h2>
+        <div class="list-wrapper-experiencia">
+          <ul class="list-experiencia">
+            <li class="list-item-experiencia">
+              <div class="list-item__image-experiencia">
+                <img src="https://worldofspectrum.org/files/thumb/1b2b197e0ee8064/400/400" alt="Empresa ABC">
+              </div>
+              <div class="list-item__content-experiencia">
+                <h4>Mirrorsoft </h4>
+                <h6>(2020 - 2022)</h6>
+                <h5>Empleado explotado</h5>
+                <p>Desarrolo de videojuegos y lavado de dinero.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="article-secciones-conocimientos">
+        <h2>Conocimientos</h2>
+        <div class="contenedor-conocimientos">
+          <div class="card-conocimientos">
+            <div class="title-conocimientos">Lenguajes</div>
+            <div class="cuerpo-conocimientos">
+              <p>HTML,CSS,JavaScript,Python y algo de Rubi</p>
+            </div>
+            <div class="pie-conocimientos">Interfaz</div>
+          </div>
+          <div class="card-conocimientos">
+            <div class="title-conocimientos">Herramientas</div>
+            <div class="cuerpo-conocimientos">
+              <p>Git,VS Code y Canva</p>
+            </div>
+            <div class="pie-conocimientos">Diseño</div>
+          </div>
+        </div>
+      </article>
+
+      <article id="article-secciones-recomendaciones">
+        <h2>Recomendaciones</h2>
+        <p>¿Tenés alguna recomendación sobre mi trabajo?</p>
+        <div class="nav-datos">
+          <div class="datos ampliar2 titulo">
+            <form id="form-recomendacion" action="#">
+              <table>
+                <tr>
+                  <td>
+                    <label for="nombre">Su nombre:</label><br>
+                    <input type="text" id="nombre" class="clsinput"><br><br>
+                    <label for="mensaje">Su recomendación:</label><br>
+                    <textarea id="mensaje" rows="5" cols="40" class="clsinput"></textarea>
+                  </td>
+                  <td>
+                    <button class="clsbuttom">Enviar</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div id="lista-recomendaciones" class="datos detalle1"></div>
+          <div id="lista-mensajes" class="datos detalle2"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="footer-contacto">
+    <div class="container-footer">
+      <h2>Datos de Contacto</h2>
+      <div class="contact-data">
+        <div class="contact-info">
+          <ul>
+            <li><b>FECHA DE NAC.:</b> 16/07/2002</li>
+            <li><b>Email:</b> victoria.juarez@alumnos.ispi4038.edu.ar</li>
+            <li><b>Teléfono:</b> +543413005198</li>
+          </ul>
+        </div>
+        <div class="contact-mapa">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-60.9375,-32.8750,-60.9345,-32.8720&layer=mapnik&marker=-32.8735,-60.9360" width="400" height="300" style="border:0;">
+            
+          </iframe>
+        </div>
+        <div class="contact-form">
+          <form name="frmContacto">
+            <div class="form-control">
+              <label for="name">Nombre</label><br>
+              <input type="text" id="name" name="name" class="clsinput">
+            </div>
+            <div class="form-control">
+              <label for="phone">Teléfono</label><br>
+              <input type="number" id="phone" name="phone" class="clsinput">
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label><br>
+              <input type="email" id="email" name="email" class="clsinput">
+            </div>
+            <div class="form-control">
+              <label for="mensaje">Mensaje</label><br>
+              <textarea id="mensaje-contacto" name="mensaje" rows="5" cols="33" class="clsinput"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/p.js"></script>
+</body>
+
+</html>
