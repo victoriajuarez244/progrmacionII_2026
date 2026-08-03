@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    border-collapse: collapse; /* Quita el doble borde molesto */
+    font-family: sans-serif;
+  }
+  
+  th, td {
+    padding: 10px;             /* Le da espacio al texto para que respire */
+    border-bottom: 1px solid #ccc; /* Línea gris fina para separar filas */
+    text-align: left;          /* Alinea todo parejo a la izquierda */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Un gris suave para distinguir el título */
+  }
