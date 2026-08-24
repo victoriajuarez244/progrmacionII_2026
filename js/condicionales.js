@@ -1,3 +1,62 @@
+function calculadora(A,B,Operador){
+let resultado;
+switch(Operador){
+    case "+":
+        resultado = A + B;
+        break;
+    
+    case "-":
+        resultado = A - B;
+        break;
+
+    case "*":
+        resultado = A * B;
+        break;
+
+    case "/":
+    resultado = A / B;
+        break;
+
+        case "/":
+            if (B == 0) {
+                resultado = "No se puede dividir por 0";
+            } else {
+                resultado = A / B;
+            }
+            break;
+
+    default:
+    resultado = "Operador incorrecto";
+
+
+
+}
+
+
+
+
+}
+
+
+
+let compra = 15000;
+
+let descuento = compra > 10000 ? compra * 0.20 : 0;
+
+let total = compra - descuento;
+
+alert("Total a pagar: $" + total);
+
+
+
+
+
+
+
+
+
+
+
 // function mayor(A, B, C) {
 //     if (A > B && A > C) {
 //         alert("El mayor es: " + A);
@@ -44,29 +103,109 @@
 // }//
 
 
-let now = new Date();
-let numDay = now.getDay();
+// let now = new Date();
+// let numDay = now.getDay();
 
-switch (numDay) {
-    case 6:
-        alert("Sábado");
-        break;
+// switch (numDay) {
+//     case 6:
+//         alert("Sábado");
+//         break;
 
-    case 0:
-        alert("Domingo");
-        break;
+//     case 0:
+//         alert("Domingo");
+//         break;
     
-    case 1:
-        alert("Lunes");
-        break;
+//     case 1:
+//         alert("Lunes");
+//         break;
     
     
-    case 2:
-    alert("Martes");
-    break;
+//     case 2:
+//     alert("Martes");
+//     break;
     
 
-    default:
-        alert("Otro día");
-        break;
-}
+//     default:
+//         alert("Otro día");
+//         break;
+// }
+
+
+// function mostrarDia() {
+
+//     let now = new Date();
+//     let numDay = now.getDay();
+
+//     switch (numDay) {
+
+//         case 0:
+//             alert("Domingo");
+//             break;
+
+//         case 1:
+//             alert("Lunes");
+//             break;
+
+//         case 2:
+//             alert("Martes");
+//             break;
+
+//         case 3:
+//             alert("Miércoles");
+//             break;
+
+//         case 4:
+//             alert("Jueves");
+//             break;
+
+//         case 5:
+//             alert("Viernes");
+//             break;
+
+//         case 6:
+//             alert("Sábado");
+//             break;
+
+//         default:
+//             alert("Otro día");
+//     }
+// }
+
+// mostrarDia();
+
+// function calculadora(A, B, operador) {
+
+//     let resultado;
+
+//     switch (operador) {
+
+//         case "+":
+//             resultado = A + B;
+//             break;
+
+//         case "-":
+//             resultado = A - B;
+//             break;
+
+//         case "*":
+//             resultado = A * B;
+//             break;
+
+//         case "/":
+//             resultado = A / B;
+//             break;
+
+//         default:
+//             resultado = "Operador incorrecto";
+//     }
+
+//     alert("Resultado: " + resultado);
+// }
+
+
+// Ejemplo
+// let num1 = 5;
+// let operador = "*";
+// let num2 = 3;
+
+// calculadora(num1, num2, operador);
